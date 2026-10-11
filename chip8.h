@@ -12,6 +12,10 @@
 #define DISPLAY_HEIGHT 32
 
 #define PROGRAM_START_ADDRESS 0x200
+#define FONT_START_ADDRESS 0x50
+#define FONT_CHAR_SIZE 5
+#define FONT_CHAR_COUNT 16
+#define FONT_SIZE (FONT_CHAR_SIZE * FONT_CHAR_COUNT) // 80 = 0x50 
 
 typedef struct { 
 
