@@ -16,6 +16,7 @@
 #define FONT_CHAR_SIZE 5
 #define FONT_CHAR_COUNT 16
 #define FONT_SIZE (FONT_CHAR_SIZE * FONT_CHAR_COUNT) // 80 = 0x50 
+#define KEYPAD_SIZE 16
 
 typedef struct { 
 
@@ -33,6 +34,8 @@ typedef struct {
     uint8_t sp; // stack pointer to know number of entries used
 
     bool display[DISPLAY_HEIGHT][DISPLAY_WIDTH]; 
+
+    bool keypad[KEYPAD_SIZE];
 
 
 } Chip8;
